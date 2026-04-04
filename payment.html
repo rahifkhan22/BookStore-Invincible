@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+
+    <!-- LEFT LOGO -->
+    <div class="nav-left">
+        <a href="index.html" class="logo">📚 BookStore</a>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Books Catalog</a>
+    </div>
+
+    <!-- CENTER SEARCH -->
+    <div class="nav-center">
+        <input type="text" placeholder="Search books...">
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <!-- RIGHT MENU -->
+    <div class="nav-right">
+        <a href="login.html">Login / Sign IN</a>
+        <div class="nav-cart">
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <div class="nav-profile">
+            <a href="myprofile.html">
+                <i class="fa-regular fa-circle-user"></i>
+            </a>
+        </div>
+    </div>
+
+    </nav>
+
+    <div class="payment-page">
+        <div class="payment-details">
+            <h1>PAYMENT DETAILS</h1>
+
+            <div class="payment-details-1">
+                <h2>Billing Details</h2>
+                <p><b>Name:</b>  Invincible</p>
+                <p><b>Email:</b>  Invincible20@gmail.com</p>
+                <p><b>Phone:</b>  +123 456 122 333</p>
+                <p><b>Address:</b>  177A Bleecker Street, Greenwich Village, NYC</p>
+            </div>
+
+            <hr> <div class="payment-details-1">
+                <h2>Payment Method</h2>
+
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" maxlength="12">
+
+                <label for="expiry">Expiry Date:</label>
+                <input type="month" id="expiry">
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" maxlength="4">
+            </div>
+
+            <hr> <div class="payment-details-1">
+                <h2>Order Summary</h2>
+                <p>Book 1 - ₹509</p>
+                <p>Book 2 - ₹499</p>
+                <p style="font-weight: bold; font-size: 18px;">Total: ₹1008</p>
+            </div>
+
+            <a onclick="return validatePayment()" href="Order-confirmation.html" class="pym-button">
+                Proceed to Payment
+            </a>
+        </div>
+    </div>
+
+    <script>
+    function validatePayment() {
+        var cardNumber = document.getElementById("cardNumber").value;
+        var expiry = document.getElementById("expiry").value; // Format will be "YYYY-MM"
+        var cvv = document.getElementById("cvv").value;
+
+        // Check empty fields
+        if (cardNumber === "" || expiry === "" || cvv === "") {
+            alert("All payment fields are required!");
+            return false;
+        }
+
+        // Check card number is exactly 12 digits
+        if (cardNumber.length !== 12 || isNaN(cardNumber)) {
+            alert("Card number must be exactly 12 digits!");
+            return false;
+        }
+
+        // Check CVV is 3 or 4 digits
+        if (cvv.length < 3 || cvv.length > 4 || isNaN(cvv)) {
+            alert("CVV must be 3 or 4 digits!");
+            return false;
+        }
+
+        // --- NEW EXPIRY DATE LOGIC ---
+        // Get today's date and format it as "YYYY-MM"
+        var today = new Date();
+        var currentYear = today.getFullYear();
+        var currentMonth = (today.getMonth() + 1).toString().padStart(2, '0');
+        var currentYearMonth = currentYear + "-" + currentMonth;
+
+        // Check if the selected date is in the past
+        if (expiry < currentYearMonth) {
+            alert("This card has expired! Please enter a valid future date.");
+            return false;
+        }
+
+        alert("Payment Successful! Redirecting to Order Confirmation...");
+        return true;
+    }
+</script>
+
+</body>
+</html>

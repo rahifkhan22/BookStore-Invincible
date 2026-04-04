@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+
+    <!-- LEFT LOGO -->
+    <div class="nav-left">
+        <a href="index.html" class="logo">📚 BookStore</a>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Books Catalog</a>
+    </div>
+
+    <!-- CENTER SEARCH -->
+    <div class="nav-center">
+        <input type="text" placeholder="Search books...">
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <!-- RIGHT MENU -->
+    <div class="nav-right">
+        <a href="login.html">Login / Sign IN</a>
+        <div class="nav-cart">
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <div class="nav-profile">
+            <a href="myprofile.html">
+                <i class="fa-regular fa-circle-user"></i>
+            </a>
+        </div>
+    </div>
+    
+    </nav>
+
+
+    <div class="catalog-body">
+        <div class="left-body">
+            <h2 class="left-body-header">Categories</h2>
+
+            <div class="filter-section">
+                <h3>Book Type</h3>
+                <label><input type="checkbox" >Comic</label>
+                <label><input type="checkbox" >Manga</label>
+                <label><input type="checkbox" >Non-fiction</label>
+                <label><input type="checkbox" >Sci-fi</label>
+                <label><input type="checkbox" >History</label>
+            </div>
+
+            <div class="filter-section">
+                <h3>Author</h3>
+                <label><input type="checkbox" >Jeffery Austen</label>
+                <label><input type="checkbox" >Wilbur smith</label>
+                <label><input type="checkbox" >DK</label>
+                <label><input type="checkbox" >Jeffery Austen</label>
+                <label><input type="checkbox" >Nicholas Sparks</label>
+            </div>
+
+            <div class="filter-section">
+                <h3>Price</h3>
+                <label><input type="checkbox" >200-300</label>
+                <label><input type="checkbox" >300-400</label>
+                <label><input type="checkbox" >400-500</label>
+                <label><input type="checkbox" >500-1000</label>
+                <label><input type="checkbox" >1200</label>
+            </div>
+            <p style="color: rgb(77, 119, 190); text-decoration-line: underline;">See More</p>
+        </div>
+        <div class="right-body">
+            <h1>ALL BOOKS</h1>
+
+
+            <div class="books-container">
+
+        <!-- Book Card -->
+            <div class="book-card">
+                <img src="Assets/book1.webp" alt="Ikigai">
+                    <h3>DARK</h3>
+                    <div class="price">
+                    <span class="new">₹ 509</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+
+            <div class="book-card">
+                <img src="Assets/book12.webp" alt="Ikigai">
+                    <h3>Launching Business</h3>
+                    <div class="price">
+                    <span class="new">₹ 999</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+
+            <div class="book-card">
+                <img src="Assets/book3.webp" alt="Ikigai">
+                    <h3>Larry B.Moffit Book</h3>
+                    <div class="price">
+                    <span class="new">₹ 299</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+
+            <div class="book-card">
+                <img src="Assets/book4.webp" alt="Ikigai">
+                    <h3>The Sapphire Birds</h3>
+                    <div class="price">
+                    <span class="new">₹ 699</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+
+            <div class="book-card">
+                <img src="Assets/book5.webp" alt="Ikigai">
+                    <h3>Spacecats</h3>
+                    <div class="price">
+                    <span class="new">₹ 499</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+
+            <div class="book-card">
+                <img src="Assets/book16.webp" alt="Ikigai">
+                    <h3>The Titan In The Forest</h3>
+                    <div class="price">
+                    <span class="new">₹ 999</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+
+            <div class="book-card">
+                <img src="Assets/book13.webp" alt="Ikigai">
+                    <h3>The Labyrinth Of Whipers</h3>
+                    <div class="price">
+                    <span class="new">₹ 499</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+
+            <div class="book-card">
+                <img src="Assets/book8.webp" alt="Ikigai">
+                    <h3>Jeo Chamber</h3>
+                    <div class="price">
+                    <span class="new">₹ 299</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+
+            <div class="book-card">
+                <img src="Assets/book9.webp" alt="Ikigai">
+                    <h3>The Devil Smile</h3>
+                    <div class="price">
+                    <span class="new">₹ 899</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+
+            <div class="book-card">
+                <img src="Assets/book10.webp" alt="Ikigai">
+                    <h3>Your Name Here</h3>
+                    <div class="price">
+                    <span class="new">₹ 1200</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+
+            <div class="book-card">
+                <img src="Assets/book2.webp" alt="Ikigai">
+                    <h3>The Threshold of Dreams</h3>
+                    <div class="price">
+                    <span class="new">₹ 599</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+
+            <div class="book-card">
+                <img src="Assets/book6.webp" alt="Ikigai">
+                    <h3>The Formula For Success</h3>
+                    <div class="price">
+                    <span class="new">₹ 1299</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+
+            <div class="book-card">
+                <img src="Assets/book11.webp" alt="Ikigai">
+                    <h3>Edit This Book Cover</h3>
+                    <div class="price">
+                    <span class="new">₹ 399</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+
+            <div class="book-card">
+                <img src="Assets/book14.webp" alt="Ikigai">
+                    <h3>The River Of Life</h3>
+                    <div class="price">
+                    <span class="new">₹ 999</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+
+            <div class="book-card">
+                <img src="Assets/book15.webp" alt="Ikigai">
+                    <h3>Change In Mind</h3>
+                    <div class="price">
+                    <span class="new">₹ 899</span>
+            </div>
+            <button class="add-btn">🛍 Add to Bag</button>
+            </div>
+        
+        </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+                © 1996-2026, BOOKSTORE.COM
+            </div>
+    </footer>
+</body>
+</html>

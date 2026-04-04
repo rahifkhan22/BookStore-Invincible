@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+
+    <!-- LEFT LOGO -->
+    <div class="nav-left">
+        <a href="index.html" class="logo">📚 BookStore</a>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Books Catalog</a>
+    </div>
+
+    <!-- CENTER SEARCH -->
+    <div class="nav-center">
+        <input type="text" placeholder="Search books...">
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <!-- RIGHT MENU -->
+    <div class="nav-right">
+        <a href="login.html">Login / Sign IN</a>
+        <div class="nav-cart">
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <div class="nav-profile">
+            <a href="myprofile.html">
+                <i class="fa-regular fa-circle-user"></i>
+            </a>
+        </div>
+    </div>
+
+    </nav>
+
+    <div class="profile-body">
+        <div class="profile-details">
+
+            <div class="profile-image">
+                <img src="Assets/Invincible War.jpg" alt="User Image">
+            </div>
+
+            <h1>User Profile</h1>
+
+            <div class="profile-row">
+                <span class="label">Name:</span>
+                <span id="name">Invincible</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="label">Age:</span>
+                <span id="age">20</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="label">Address:</span>
+                <span id="address">177A Bleecker Street, Greenwich Village, NYC</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="label">Gender:</span>
+                <span id="gender">Male</span>
+            </div>
+
+            <div class="profile-row">
+                <span class="label">Mobile:</span>
+                <span id="mobile">+123 456 122 333</span>
+            </div>
+
+            <button class="profile-btn-text" onclick="editProfile()">Edit Profile</button>
+
+        </div>
+    </div>
+
+    <script>
+        function editProfile() {
+            var name = prompt("Enter Name:", document.getElementById("name").innerText);
+            var age = prompt("Enter Age:", document.getElementById("age").innerText);
+            var address = prompt("Enter Address:", document.getElementById("address").innerText);
+            var gender = prompt("Enter Gender:", document.getElementById("gender").innerText);
+            var mobile = prompt("Enter Mobile:", document.getElementById("mobile").innerText);
+
+            document.getElementById("name").innerText = name;
+            document.getElementById("age").innerText = age;
+            document.getElementById("address").innerText = address;
+            document.getElementById("gender").innerText = gender;
+            document.getElementById("mobile").innerText = mobile;
+
+            alert("Profile Updated!");
+        }
+    </script>
+
+</body>
+</html>

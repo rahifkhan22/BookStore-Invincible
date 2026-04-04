@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+
+    <!-- LEFT LOGO -->
+    <div class="nav-left">
+        <a href="index.html" class="logo">📚 BookStore</a>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Books Catalog</a>
+    </div>
+
+    <!-- CENTER SEARCH -->
+    <div class="nav-center">
+        <input type="text" placeholder="Search books...">
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <!-- RIGHT MENU -->
+    <div class="nav-right">
+        <a href="login.html">Login / Sign IN</a>
+        <div class="nav-cart">
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <div class="nav-profile">
+            <a href="myprofile.html">
+                <i class="fa-regular fa-circle-user"></i>
+            </a>
+        </div>
+    </div>
+
+    </nav>
+
+    <div class="login-page">
+        <div class="login-details">
+            <h1>LOGIN</h1>
+
+            <label for="username">User Name:</label>
+            <input type="text" id="username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+
+            <input type="submit" value="Submit" class="login-submit" onclick="validateLogin()">
+            
+            <a href="Sign-in.html" class="login-details-a">Create an Account?</a>
+        </div>
+    </div>
+
+    <script>
+        function validateLogin() {
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check empty fields
+            if (username == "" || password == "") {
+                alert("All fields are required!");
+                return false;
+            }
+
+            // Check username length
+            if (username.length < 3) {
+                alert("Username must be at least 3 characters!");
+                return false;
+            }
+
+            // Check password length
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters!");
+                return false;
+            }
+
+            alert("Login Successful!");
+            return true;
+        }
+    </script>
+
+</body>
+</html>

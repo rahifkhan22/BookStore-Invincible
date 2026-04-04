@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+
+    <!-- LEFT LOGO -->
+    <div class="nav-left">
+        <a href="index.html" class="logo">📚 BookStore</a>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Books Catalog</a>
+    </div>
+
+    <!-- CENTER SEARCH -->
+    <div class="nav-center">
+        <input type="text" placeholder="Search books...">
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <!-- RIGHT MENU -->
+    <div class="nav-right">
+        <a href="login.html">Login / Sign IN</a>
+        <div class="nav-cart">
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+        <div class="nav-profile">
+            <a href="myprofile.html">
+                <i class="fa-regular fa-circle-user"></i>
+            </a>
+        </div>
+    </div>
+    
+    </nav>
+
+    <div class="Cart-page">
+        <div class="Cart-wrapper">
+            <h1>Cart</h1>
+        <div class="Cart-details">
+            <div class="Cart-details-img">
+                <img src="Assets/book13.webp" alt="book13" width="200px">
+                <p>Price : ₹ 509</p>
+                <p>Quantity : 1</p>
+                <p>Rating : 7.9</p>
+                <button class="Cart-details-btn">Remove</button>
+            </div>
+            
+            <div class="Cart-details-img">
+                <img src="Assets/book14.webp" alt="book13" width="200px">
+                <p>Price : ₹ 899</p>
+                <p>Quantity : 1</p>
+                <p>Rating : 9.0</p>
+                <button class="Cart-details-btn">Remove</button>
+            </div>
+
+            <div class="Cart-details-img">
+                <img src="Assets/book3.webp" alt="book13" width="200px">
+                <p>Price : ₹ 599</p>
+                <p>Quantity : 1</p>
+                <p>Rating : 8.7</p>
+                <button class="Cart-details-btn">Remove</button>
+            </div>
+        </div>
+
+        <p style="font-size: 25px">Order Conformation</p>
+        <a href="payment.html" >
+            <button class="payment-btn">Payment Here</button>
+        </a>
+        </div>
+    </div>
+
+</body>
+</html>
