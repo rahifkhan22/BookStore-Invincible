@@ -53,7 +53,18 @@ BookStore-Invincible/
 ├── style.css
 └── assets (images)
 ```
+### 🖥️ Desktop Interface
+| 🏠 Home Page | 📖 Books Catalog |
+| :---: | :---: |
+| ![Home](Assets/home.png) | ![Catalog](Assets/catalog.png) |
 
+| 👤 User Profile | 🛒 Shopping Cart |
+| :---: | :---: |
+| ![Profile](Assets/profile.png) | ![Cart](Assets/cart.png) |
+
+| 🔐 Login Page | 📝 Registration Page |
+| :---: | :---: |
+| ![Login](Assets/login.png) | ![Registration](Assets/registration.png) |
 ---
 
 ## 🎯 Purpose of the Project
