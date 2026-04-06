@@ -53,18 +53,47 @@ BookStore-Invincible/
 ├── style.css
 └── assets (images)
 ```
+## 📸 Project Showcase
+
 ### 🖥️ Desktop Interface
-| 🏠 Home Page | 📖 Books Catalog |
-| :---: | :---: |
-| ![Home](Assets/home.png) | ![Catalog](Assets/catalog.png) |
 
-| 👤 User Profile | 🛒 Shopping Cart |
-| :---: | :---: |
-| ![Profile](Assets/profile.png) | ![Cart](Assets/cart.png) |
+#### 🏠 Home Page (Hero Section)
+![Home](Assets/home.png)
 
-| 🔐 Login Page | 📝 Registration Page |
-| :---: | :---: |
-| ![Login](Assets/login.png) | ![Registration](Assets/registration.png) |
+---
+
+#### 🏠 Home Page (Featured Content)
+![Home 2](Assets/home2.png)
+
+---
+
+#### 🏠 Home Page (Footer & Details)
+![Home 3](Assets/home3.png)
+
+---
+
+#### 📖 Books Catalog
+![Catalog](Assets/catalog.png)
+
+---
+
+#### 👤 User Profile
+![Profile](Assets/profile.png)
+
+---
+
+#### 🛒 Shopping Cart
+![Cart](Assets/cart.png)
+
+---
+
+#### 🔐 Login Page
+![Login](Assets/login.png)
+
+---
+
+#### 📝 Registration Page
+![Registration](Assets/registration.png)
 ---
 
 ## 🎯 Purpose of the Project
